@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bgColor: #1e1e1e;
+    --whiteColor: #fff;
+    --linearColor: #22D3EE;
+    --containerColor: #0f172a;
+}
+
+body {
+    background: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    color: var(--linearColor);
+}
+
+.container {
+    width: 100%;
+    background: var(--containerColor);
+    padding:  10px;
+    margin: 50px auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.nav .logo {
+    width: 6rem;
+}
+
+.nav ul  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    list-style: none;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+section {
+    padding: 10px 5%;
+}
+
+.user-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.user-section p {
+    font-size: 12px;
+    color: var(--whiteColor);
+    line-height: 1rem;
+    margin-top: 10px;
+}
+
+.user-section-text .icons {
+   display: flex;
+}
+
+.user-section-text .icons a img {
+    width: 40px;
+}
+
+.user-section img {
+    width: 7rem;
+}
+
+.recent-project {
+    padding: 2.5rem 0;
+}
+
+.recent-project h2, .latest-post h2 {
+    font-size: 20px;
+    color: var(--whiteColor);
+    font-weight: 600;
+}
+
+.recent-project .project {
+    background: var(--bgColor);
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.project .project-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.project h3 {
+    color: var(--whiteColor);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project h3 span {
+    font-size: 8px;
+    border-radius: 3px;
+    padding: 2px;
+    color: var(--whiteColor);
+}
+
+.green {
+    background: #10B981;
+}
+
+.red {
+    background: #DC2626;
+}
+
+.purple {
+    background: #7C3AED;
+}
+
+.project p {
+    color: #fff;
+    font-size: 8px;
+    padding-top: 2px;
+}
+
+.latest-post {
+    padding: 10px 0;
+}
+
+.posts {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.latest-post-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.latest-post-title small {
+    color: #fff;
+    font-size: 10px;
+}
+
+.post {
+    background: #1e293b;
+    margin: 5px 0;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    width: 200px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post-text {
+    padding: 12px 2px ;
+}
+
+.post h3 {
+    font-size: 13px;
+}
+
+.post .post-time {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.post {
+    font-size: 12px;
+}
+
+.subscription {
+    margin: 8px 0;
+    color: var(--whiteColor);
+}
+
+.subscribe-text h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.subscribe-text p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.emailbox {
+    background: var(--bgColor);
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+
+.emailbox input {
+    width: 100%;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 3px 0;
+    color: var(--whiteColor);
+
+    &::placeholder {
+        color: var(--whiteColor);
+        font-size: 12px;
+    }
+}
+
+.emailbox button {
+    border: 0;
+    outline: 0;
+    padding: 8px 10px;
+    background: var(--linearColor);
+    font-weight: 600;
+    border-radius: 2rem;
+
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--whiteColor);
+}
+
+footer {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--whiteColor);
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer .media a {
+    color: #fff;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 680px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 40%;
+        padding: 10px;
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+
